@@ -1,0 +1,149 @@
+body
+{
+    margin: 0;
+    background-color: #1D3557;
+    font-family: Playfair Display;
+    display: flex;
+    flex-direction: column;
+}
+
+div.conteneur
+{
+    margin: 0 3em 3em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.conteneur nav
+{
+    font-size: 2em;
+    margin: auto;
+    color: #A8DADC;
+}
+
+div.conteneur nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+div.conteneur nav ul li
+{
+    padding: 15px;
+}
+
+div.conteneur nav ul li a:hover
+{
+    color: #E63946;
+}
+
+
+div.conteneur nav ul li a
+{
+    color: #F1FAEE;
+    /* font-size: 16px; */
+    font-size: 1.3em;
+}
+
+#bloc-logo {
+    display: flex;
+    justify-content: center;
+} 
+
+#bloc-logo img
+{
+    width: auto;
+    height: 40vh;
+}
+
+div.conteneur h2
+{
+    font-size: 2em;
+    color: #F1FAEE;
+}
+
+div.conteneur p
+{
+    font-size:medium;
+    color: #F1FAEE;
+    width: 50%;
+}
+
+div.conteneur #wrapper-profils
+{
+    display: flex;
+    justify-content: flex-end;    
+}
+
+div.conteneur #wrapper-profils #profils {
+
+}
+
+
+#profils h2 {
+    text-align: center;
+}
+
+#profils img
+{
+    display: inline;
+    width: 10vh;
+	height: 10vh;
+    border-radius: 50%;
+    padding: 5px;
+    transition: transform .2s;
+}
+
+#profils img:hover
+{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+#profile-pic {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width:780px) {
+    body
+    {
+        display:flex;
+        flex-direction: column;
+    }
+
+    #bloc-logo img
+    {
+        width: 60%;
+        height: auto;
+    }
+
+    nav
+    {
+        font-size: 1em;
+    }
+
+    h2
+    {
+        text-align: center;
+    }
+
+    div.conteneur p
+    {
+        width: auto;
+        text-align: center;
+    }
+
+   
+
+    #wrapper-profils {
+        justify-content: center;
+    }
+
+}

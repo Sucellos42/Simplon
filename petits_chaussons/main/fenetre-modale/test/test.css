@@ -1,0 +1,46 @@
+div.color33 {
+    display: flex;
+    width: 100%;
+    --div-height: 2.5em;
+    height: var(--div-height);
+    border: 3px solid blanchedalmond;
+}
+
+
+label {
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    user-select: none;
+    height: var(--div-height);
+    margin: 2em 0 1em 1em;
+    vertical-align: center;
+}
+
+input#color2 {
+display: block;
+position: absolute;
+width: 100%;
+height: 3em;
+border: none;
+color: unset;
+}
+
+ul li {
+    list-style: none;
+}
+
+input {
+    min-width: 100%;
+    max-width: 100%;
+    height: var(--div-height);
+}
+
+#2 {
+    border: 2px solid green;
+}

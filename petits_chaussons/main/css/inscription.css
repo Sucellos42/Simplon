@@ -1,0 +1,256 @@
+/* Corp de la page */
+*{
+    font-weight: normal;
+    font-size:16px;
+    margin:0;
+    padding:0%;
+    border: 0;
+}
+
+body{
+    background-color:#1D3557;
+    padding:30px;
+    
+}
+
+/*header*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+h1{
+    font-size: 3em;
+    color:#F1FAEE;
+}
+/* nav */
+nav{
+    position: relative;
+    left:500px;
+    color: #F1FAEE;
+    text-decoration: underline;
+    font-family: Playfair Display;
+    max-width:100vw;
+}
+
+li{
+    margin:10px;
+    font-size: 3em;
+    list-style-type: none;
+}
+
+
+.corp{
+    position: relative;
+    top:50px;
+    display: flex;
+    flex-direction: row-reverse;
+    /*border: yellow 2px solid;*/
+
+}
+/* Image */
+.bloc-logo{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:50%;
+}
+
+img{
+    width:70%;
+    height:auto;
+    padding:20px;
+}
+
+
+
+/* Formulaire */
+
+.bloc-form{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    bottom:15px;
+    /*border: red 2px solid;*/
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    width:650px;
+    padding: 20px;
+}
+
+h2{
+    font-size:2em;
+    color:#F1FAEE;
+    font-family: Playfair Display;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    bottom:30px;
+}
+
+label{
+    color:#F1FAEE;
+    
+}
+
+input{
+    padding:5px;
+    margin:10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.nom-prenom{
+    display: flex;
+    flex-direction: row;
+}
+.nom{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.prenom{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
+.connexion{
+    color:#F1FAEE;
+    background-color: #A8DADC;
+    border-radius: 10px;
+    padding:15px;
+    font-weight: bold;
+}
+
+.inscription{
+    background-color: #E63946;
+    color: #F1FAEE;
+    border-radius: 10px;
+    text-transform: none;
+    padding:15px;
+    width:92%;
+    position: relative;
+    align-self:center;
+    /*left:30px;*/
+}
+
+/* Lien */
+a{
+    text-decoration: none;
+    color:#F1FAEE;
+    font-weight: bold;
+}
+
+.propos{
+    font-size: 1em;
+}
+
+.accueil{
+    font-size:1em;
+}
+
+
+
+/* responcive */
+
+@media screen and (max-width:780px){
+body{
+    max-width:100vw;
+}
+
+header{
+    position: relative;
+    top:100px;
+    /*border: lime 2px solid;*/
+    display:flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height:300px;
+}
+
+h1{
+    text-align: center;
+    font-size:2em;
+}
+
+.corp{
+    display:flex;
+    flex-direction: column;
+    /*border: aqua solid 2px;*/
+    max-width:100vw;
+
+}
+
+nav{
+    position: relative;
+    left:5px;
+    top:40px;
+    /*border: lightpink 2px solid;*/
+    width:100%;
+    text-align: center;
+    
+}
+
+li{
+    font-size: 1.4em;
+    padding:20px;
+}
+
+.bloc-form{
+    position:relative;
+    bottom:50px;
+    max-width:100vw;
+   /* border:red 2px solid;*/
+}
+
+form{
+    margin: auto;
+    width:58%;
+}
+
+.nom-prenom{
+    display: flex;
+    flex-direction: column;
+}
+
+.nom{
+    width: 100%;
+}
+
+.prenom{
+    width:100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.inscription{
+    width: 54%;
+    margin: auto;
+    font-weight: bold;
+    
+}
+
+.bloc-logo{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    position: relative;
+    left:25px;
+    bottom:380px;
+}
+}

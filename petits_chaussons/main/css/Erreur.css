@@ -1,0 +1,98 @@
+body
+{
+    background-color: #1D3557;
+    font-family: Playfair Display;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+
+div.conteneur {
+    margin: 3em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.conteneur div#erreur {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 50%;
+}
+
+div.conteneur div#erreur h1 {
+    font-size: 4em;
+}
+
+div.conteneur div#erreur h2 {
+    font-size: 3em;
+}
+
+div.conteneur div#erreur p.message {
+    font-size: 2em;
+    width: 50%;
+}
+
+div.conteneur #nav_logo {
+    display: flex;
+    flex-flow: column wrap;
+    /* width: 50%; */
+}
+
+div.conteneur #nav_logo nav ul li {
+    list-style: none;
+}
+
+div.conteneur #nav_logo nav {
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+/* hello */
+
+
+img
+{
+    width: calc(40vw - 3em);
+    height: auto;
+}
+
+li :hover
+{
+    color: #E63946;
+}
+
+a
+{
+    color: #F1FAEE;
+}
+
+a:hover
+{
+    color: #E63946;
+}
+
+nav
+{
+    font-size: 3em;
+    color: #A8DADC;
+}
+
+#erreur
+{
+    color: #F1FAEE;
+}
+
+@media screen and (max-width: 780px){
+    div.conteneur {
+        flex-direction: column;
+    }
+    
+}

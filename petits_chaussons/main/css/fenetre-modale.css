@@ -1,0 +1,334 @@
+:root {
+    --red: #E63946;
+    --white: #F1FAEE;
+    --light-blue: #A8DADC;
+    --blue: #457B9D;
+    --dark-blue: #1D3557; 
+}
+
+* {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+
+}
+
+* {
+    /*pour que le padding soit pris en compte dans le calcul des largeurs*/
+    box-sizing: border-box;
+}
+
+/*pour centrer la fenetre modal on utilise les flexboxs*/
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;/*x*/
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.521);
+    animation: fadeIn 350ms both;
+}
+
+.modal-wrapper {
+    overflow: auto;  /*pour faire apparaitre la scroll bar*/
+    width: 303px;
+    max-width: calc(100vw);
+    max-height: calc(100vh);
+    background-color: var(--white);
+    animation: slideFromTop 350ms both;
+    border-radius: 6px;
+}
+
+.modal[aria-hidden="true"]{
+    animation-name: fadeOut;
+    /* animation-direction: reverse; 
+    a voir à 36minutes du tuto */
+
+}
+
+.modal[aria-hidden="true"] .modal-wrapper{
+    animation-name: slideToBottom;
+
+}
+
+/***********animations fen modale***********/
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity : 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity : 0; }
+}
+
+@keyframes slideFromTop {
+    from { transform: translateY(-80px)}
+    to { transform: translateY(0px)}
+}
+
+@keyframes slideToBottom {
+    from { transform: translateY(0px)}
+    to { transform: translateY(-80px)}
+}
+
+
+/*Bouton fermer*/
+.js-modal-close {
+    position: absolute;
+    /* top: 35%; */
+    left: 93%;
+}
+
+
+
+/* CSS fenetre upload profile pic */
+
+#profilepic-title {
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em 0;
+    font-weight: 900;
+}
+
+#wrap2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#profilePicForm {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+
+#profilePicForm form {
+    padding: 1em 0;
+}
+
+#uploadform {
+    border: 2px solid var(--dark-blue);
+    background-color: var(--dark-blue);
+}
+
+#profilePicture {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+#profilePicture img {
+    height: auto;
+    width: 150px;
+}
+
+#uploadform {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#uploadbuttonProfilePic {
+    width: 100%;
+    background-color: none;
+    text-align: center;
+    line-height: 2;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    
+}
+
+#uploadprofilepic {
+    background-color: unset;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-left: 1px solid white;
+    padding: 0 1em;
+
+}
+
+#deleteprofilepic {
+    width: 100%;
+    background-color: black;
+    color:white;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1em 0;
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+/************CSS fenetre input***********/
+
+.modal-wrapper{
+    /* border: 1px solid darkmagenta; */
+    padding: 5px;
+}
+/*****header fen modale*****/
+.mod-header {
+    background-color: var(--white);
+    color: var(--white);
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height:75px;
+    box-shadow: 2px 0px 4px var(--white);
+    
+}
+
+
+
+/*****H1*****/
+#modal-title {
+    margin: 0;
+    padding: 0;
+    color:var(--dark-blue);
+    font-size: 1.5rem;
+    /* height: 100%; */
+    line-height: 75px;
+    border-bottom: 1px solid grey;
+    /* margin-bottom: 10px; */
+
+}
+#title{
+    background-color: #1d35573a;
+    box-shadow: inset 1px 1px 3px;
+    text-align: center;
+}
+
+
+/*****a supprimer******/
+/* .task-title {
+    border: 2px solid seagreen;
+}
+.responsable{
+    border: 2px solid darkorange;
+}
+.affecte{
+    border: 2px solid dodgerblue;
+}
+.description{
+    border: 2px solid #E63946;
+}
+.categorie{
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+.status{
+    border: 2px solid rgb(24, 102, 34);
+}
+.end-date{
+    border: 2px solid rgba(207, 9, 191, 0.8);
+}
+.input>*{
+    margin: 10px;
+} */
+
+/******gestion des input******/
+.input{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(172, 204, 27, 0.8);
+    justify-content: center;
+    margin: 5px;
+
+}
+
+
+.input h3 {
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**********status*******/
+#wrap {
+    width: 73%;
+    /* border: 2px solid red; */
+    margin: auto;
+    padding: 10px 0;
+    
+}
+
+#wrap li {
+    list-style: none;
+}
+
+.category-color {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.category-color label {
+    color: var(--white);
+    position: absolute;
+    margin-left: 0.8em;
+    text-transform: uppercase;
+    user-select: none;
+    z-index: 1;
+    pointer-events: none;
+    
+}
+
+.category-color input[type="color"] {
+    width: 100%;
+    position: relative;
+    height: 2.5em;
+    background-color: unset;
+    border: none;
+    z-index: 0;
+    display: block;
+
+}
+
+#submit-color-status {
+    color: var(--white);
+    padding: 5px;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #E63946;
+}
+
+.status-input {
+    border: none;
+    border-radius: 3px;
+}
+
+#personnel{
+    border-radius: 6px;
+    /* border: 2px solid red; */
+    /* background-color: #5b76fb; */
+}
+
+
+
+
+
+
+

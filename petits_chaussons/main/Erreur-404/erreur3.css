@@ -1,0 +1,172 @@
+body
+{
+    width: 90%;
+    margin: auto;
+    background-color: #1D3557;
+    font-family: Playfair Display;
+}
+
+.conteneur
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav
+{
+    display: row;
+    font-size: 3em;
+    color: #A8DADC;
+    margin-right: 10%;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li :hover
+{
+    color: #E63946;
+}
+
+a
+{
+    color: #F1FAEE;
+}
+
+#bloc-logo img
+{
+    display: flex;
+    flex-direction: row;
+    width: 70vh;
+    height: 40vh;
+}
+
+#erreur
+{
+    display:flex;
+    flex-direction: column;
+    color: #F1FAEE;
+    width: 50%;
+    margin-left: 10%;
+}
+
+h1
+{
+    font-size: 4em;
+}
+
+h2
+{
+    font-size: 3em;
+}
+
+.message
+{
+    font-size: 2em;
+    width: 50%;
+}
+
+footer
+{
+    display: flex;
+    background-color: #F1FAEE;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20vh;
+    
+}
+
+.copyright
+{
+    font-size: 15px;
+    margin: auto;
+}
+
+.contact
+{
+    width: 50vh;
+    font-size: 12px;
+    margin: auto;
+    margin-right: 5px;
+}
+
+#logo_footer
+{
+    margin: auto;
+    width: 20vh;
+    height: 10vh;
+}
+
+@media screen and (max-width:780px){
+    body
+    {
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    
+    #bloc-logo img
+    {
+        display: flex;
+        width: 414px;
+        height: 153px;
+        left: 0px;
+        top: 0px;
+        order: 1;
+    }
+    
+    nav
+    {
+       display: inline;
+       order: 2;
+    }
+
+    ul
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+        font-size: 20px;
+        list-style-type: none;
+    }
+  
+    #erreur
+    {
+        display: flex;
+        font-size: 10px;
+        order: 4;
+    }
+    
+    footer
+    {
+        display: flex;
+        margin-top: 30vh;
+        width: auto;
+        padding: auto;   
+    }
+
+    .logo2
+    {
+        display: flex;
+        height: auto;
+    }
+
+    .copyright
+    {
+        font-size: 7px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .contact
+    {
+        font-size: 7px;
+        margin-bottom: auto;
+        margin-right: 5px;
+        width: auto;
+    }
+}

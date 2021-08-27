@@ -1,0 +1,296 @@
+/* GENERAL */
+
+:root {
+    --red: #E63946;
+    --white: #F1FAEE;
+    --light-blue: #A8DADC;
+    --blue: #457B9D;
+    --dark-blue: #1D3557; 
+}
+
+* {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 2em 0 0;
+    margin: 0 1em 0 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+
+/* PHP TASKS */
+
+span.category {
+    min-width: 100%;
+    display: block;
+    padding: 0.5em 0;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+body {
+    background-color: var(--white);
+}
+
+div.assigned-people {
+    display: flex;
+    justify-content: center;
+}
+
+div.assigned-people .initials {
+    display: flex;
+    background-color: var(--dark-blue);
+    color: white;
+    margin: 0.5em;
+    padding: 0.4em;
+    border-radius: 50%;
+    text-transform: uppercase;
+    height: 2em;
+    width: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+span.responsable {
+    width: 100%;
+    text-align: center;
+    background-color: var(--light-blue);
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+ul li div.background h4 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+ul li div.background div.content * {
+    padding-left: 0.2em;
+}
+
+ul li div.background div.content form.category-select,
+ul li div.background div.content form.stat-select {
+    margin: 0.4em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li div.background div.content form select {
+    border: 1px solid #777;
+    border-radius: 0.25em;
+    cursor: pointer;
+    line-height: 1.4;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+    justify-self: flex-start;
+}
+
+ul li div.background div.content form.category-select input[type="submit"],
+ul li div.background div.content form.stat-select input[type="submit"] {
+    border: 1px solid #777;
+    border-radius: 0.25em;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+    justify-self: flex-end;
+}
+ul li div.background div.content form.delete-form,
+ul li div.background div.content form.delete-form * {
+    padding-left: 0;
+}
+
+
+
+ul li div.background div.content form input.delete {
+    width: 100%;
+    margin-top: 0.4em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color:white;
+    height: 1.5em;
+    justify-self: flex-end;
+    cursor: pointer;
+}
+
+
+/* SEPARATEUR */
+
+div#separateur {
+    display: block;
+    margin: 2em 0;
+}
+div#separateur img {
+    height: auto;
+    width: 100vw;
+}
+
+/*taches*/
+.taches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#todo, #pending, #to_validate, #done, #abandoned {
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 25px 0 25px;
+}
+
+#todo li, #pending li, #done li, #to_validate li, #abandoned li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin : 10px 0 10px 0;
+}
+
+#todoTitle, #pendingTitle, #doneTitle, #to_validateTitle, #abandonedTitle {
+    color: #F1FAEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    background-color: #1D3557;
+    border-radius: 79% 21% 68% 32% / 34% 58% 42% 66% ;
+    height: 12vw;
+    max-height: 110px;
+    min-height: 40px;
+    max-width: 180px;
+    min-width: 60px;
+    vertical-align: middle;
+    margin: 1.5em;
+}
+
+#todoTitle h2, #pendingTitle h2 , #doneTitle h2, #to_validateTitle h2, #abandonedTitle h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1.5em;
+    font-size: 1.5em;
+}
+
+
+/*  BOUTON AJOUTER UNE TACHE   */
+
+#plus_btn img {
+    background-color: #1D3557;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    bottom: 50px;
+    right: 30px;
+    opacity: 0.8;
+    
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1280px) {
+    /* HEADER */
+    /* MENU */
+    
+    
+    nav {
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    /* LOGO */
+    
+    div#logo {
+        align-items: center;
+        justify-content: center;
+        height: 12vw;
+    }
+    
+    div#logo a img {
+        flex-grow: unset;
+    }
+    
+    /* FONCTIONNALITES */
+    
+    ul#liens_utiles {
+        height: 12vw;
+    }
+    
+    
+}
+
+@media  screen and (max-width: 600px) {
+    /* HEADER */
+    /* MENU */
+    
+    * {
+        font-size: 14px;
+    }
+    nav {
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+        flex-grow: unset;
+    }
+    
+    ul#menu {
+        margin: 0;
+    }
+    
+    /* LOGO */
+    
+    div#logo {
+        justify-content: center;
+        height: 12vw;
+        display: flex;
+        width: 100vw;
+    }
+    
+    div#logo a img {
+        flex-grow: unset;
+    }
+    
+    /* FONCTIONNALITES */
+    
+    ul#liens_utiles {
+        height: 12vw;
+    }
+}
+
+
+
+
