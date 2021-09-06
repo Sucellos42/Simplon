@@ -2,7 +2,7 @@
 
 echo('<h1> ** Sommaire ** </h1>');
 
-$folder = "./pages";
+$folder = "../pages";
 $files = scandir($folder);
 
 
@@ -14,5 +14,5 @@ print_r($files);
 
 
 foreach($files as $file){
-    echo ("<li><a href='$file' >'$file'</a></li>");
+    echo ("<li><a href=$file'>$file</a></li>");
 }

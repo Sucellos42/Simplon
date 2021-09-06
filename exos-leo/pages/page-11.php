@@ -1,7 +1,8 @@
 <?php 
+include('../header.php');
 define('NL', '<br/>');
 
-$fichier = file('citations.txt');
+$fichier = file('../citations.txt');
 $citation = array_rand($fichier);
 ?>
 
